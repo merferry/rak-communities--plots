@@ -11,17 +11,14 @@ set style textbox opaque noborder
 set xtics rotate by 30 right
 set key above font ",12"
 set ylabel  '{/:Bold Speedup}'
-# set y2label '{/:Bold Modularity}'
-# set logscale y
-unset logscale y2
 set yrange [0:]
-set y2tics 0.1
 set grid y
 
 
 ## Draw plot
-plot "louvainrak-sta.csv" \
-     using ($2/$4):xtic(1) title 'Our LPA' with histogram fill pattern 3 ls 2
+plot "louvainrak-compare.csv" \
+     using ($2/$4):xtic(1) title 'GVE-Louvain' with histogram fill pattern 3 ls 4, \
+  '' using ($0):($2/$4):(sprintf("%.1f", $2/$4)) with labels textcolor rgb 'black' rotate by 90 offset character 0,-1 title ''
   # '' using ($5/$3) title '' ls 2 lw 3 with linespoints axes x1y2
 
 
@@ -31,5 +28,5 @@ plot "louvainrak-sta.csv" \
 # 01. graph
 # 02. louvain-t
 # 03. louvain-m
-# 03. rak-t
-# 04. rak-m
+# 04. rak-t
+# 05. rak-m
