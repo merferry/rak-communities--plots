@@ -11,6 +11,7 @@ set style textbox opaque noborder
 set xtics rotate by 30 right
 set key above font ",12"
 set ylabel '{/:Bold Modularity}'
+set yrange [0.3:1]
 set ytics 0.1
 set grid y
 
