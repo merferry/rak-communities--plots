@@ -21,7 +21,7 @@ plot "rak-compare.csv" \
   '' using ($7/1000):xtic(1) title 'igraph LPA'     with histogram fill pattern 3, \
   '' using ($3/1000):xtic(1) title 'NetworKit LPA'  with histogram fill pattern 3, \
   '' using ($4/1000):xtic(1) title 'GVE-LPA'        with histogram fill pattern 3 ls 8, \
-  '' using ($0-5.0/20):($9/1000):(sprintf("%.0f", $9/1000)) with labels textcolor rgb 'white' rotate by 90 offset character 0,-1.5 title '', \
+  '' using ($0-5.0/20):($9/1000):(sprintf("%.0f", $9/1000)) with labels textcolor rgb 'white' rotate by 90 offset character 0,-1.0 title '', \
   '' using ($0-1.5/20):($7/1000):(sprintf("%.0f", $7/1000)) with labels textcolor rgb 'white' rotate by 90 offset character 0,-1.5 title '', \
   '' using ($0+1.5/20):(2.1*$3/1000):(sprintf("%.0f", $3/1000)) with labels rotate by 90 offset character 0,0 title '', \
   '' using ($0+5.0/20):(3.0*$4/1000):(sprintf("%.1f", $4/1000)) with labels rotate by 90 offset character 0,0 title ''
