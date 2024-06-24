@@ -1,5 +1,5 @@
 set term pdf
-set terminal pdf size 10in,2.5in
+set terminal pdf size 8.0in,2.4in
 set output 'rak-modularity.pdf'
 
 
@@ -23,8 +23,8 @@ plot "rak-compare.csv" \
   '' using 2:xtic(1) title 'NetworKit LPA'  with histogram fill pattern 3, \
   '' using 5:xtic(1) title 'GVE-LPA'        with histogram fill pattern 3 ls 8, \
   '' using ($0-5.0/20):($8):(sprintf("%.3f", $8)) with labels textcolor rgb 'white' rotate by 90 offset character 0,-1.1 title '', \
-  '' using ($0-1.5/20):($6):(sprintf("%.3f", $6)) with labels rotate by 90 offset character 0,-1.1 title '', \
-  '' using ($0+1.5/20):($2):(sprintf("%.3f", $2)) with labels rotate by 90 offset character 0,-1.1 title '', \
+  '' using ($0-1.5/20):($6):(sprintf("%.3f", $6)) with labels textcolor rgb 'white' rotate by 90 offset character 0,-1.1 title '', \
+  '' using ($0+1.5/20):($2):(sprintf("%.3f", $2)) with labels textcolor rgb 'black' rotate by 90 offset character 0,-1.1 title '', \
   '' using ($0+5.0/20):($5):(sprintf("%.3f", $5)) with labels textcolor rgb 'white' rotate by 90 offset character 0,-1.1 title ''
   # '' using 2 title '' ls 1 lw 3 with linespoints axes x1y2, \
   # '' using 4 title '' ls 2 lw 3 with linespoints axes x1y2, \

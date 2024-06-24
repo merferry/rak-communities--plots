@@ -1,5 +1,5 @@
 set term pdf
-set terminal pdf size 10in,2.5in
+set terminal pdf size 8.0in,2.4in
 set output 'rak-speedup.pdf'
 
 

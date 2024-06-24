@@ -1,5 +1,5 @@
 set term pdf
-set terminal pdf size 10in,2.0in
+set terminal pdf size 8.0in,2.0in
 set output 'rak-opt.pdf'
 
 
@@ -48,12 +48,12 @@ array B[9] = [ \
 
 
 ## Draw labels
-set label "{/:Bold OpenMP}\n{/:Bold schedule}"       at screen 0.10,0.97 center font "Tahoma,11" textcolor rgb T[1]
-set label "{/:Bold Max.}\n{/:Bold iterations}"       at screen 0.22,0.97 center font "Tahoma,11" textcolor rgb T[2]
-set label "{/:Bold Tolerance}"                       at screen 0.34,0.97 center font "Tahoma,11" textcolor rgb T[4]
-set label "{/:Bold Pruning}"                         at screen 0.43,0.97 center font "Tahoma,11" textcolor rgb T[6]
-set label "{/:Bold Strictness}"                      at screen 0.50,0.97 center font "Tahoma,11" textcolor rgb T[7]
-set label "{/:Bold Hashtable}"                       at screen 0.58,0.97 center font "Tahoma,11" textcolor rgb T[9]
+set label "{/:Bold OpenMP}\n{/:Bold schedule}"       at screen 0.15,0.97 center font "Tahoma,11" textcolor rgb T[1]
+set label "{/:Bold Max.}\n{/:Bold iterations}"       at screen 0.32,0.97 center font "Tahoma,11" textcolor rgb T[2]
+set label "{/:Bold Tolerance}"                       at screen 0.49,0.97 center font "Tahoma,11" textcolor rgb T[4]
+set label "{/:Bold Pruning}"                         at screen 0.62,0.97 center font "Tahoma,11" textcolor rgb T[6]
+set label "{/:Bold Strictness}"                      at screen 0.73,0.97 center font "Tahoma,11" textcolor rgb T[7]
+set label "{/:Bold Hashtable}"                       at screen 0.84,0.97 center font "Tahoma,11" textcolor rgb T[9]
 
 
 ## Draw plot
